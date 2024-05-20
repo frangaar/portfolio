@@ -222,14 +222,14 @@ footer {
 
 #carousel .carousel-control-prev-icon{
     background-color: black;
-    padding: 21px;
-    margin-right: 40px;
+    padding: 19px;
+    margin-right: 32px;
 }
 
 #carousel .carousel-control-next-icon{
     background-color: black;
-    padding: 21px;
-    margin-left: 38px;
+    padding: 19px;
+    margin-left: 31px;
 }
 
 #projects{
