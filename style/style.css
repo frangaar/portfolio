@@ -1,0 +1,274 @@
+h1{
+    font-family: 'Salsa', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+span{
+    font-weight: bold;
+}
+
+nav{
+    background-color: #334D68;
+    height: 100px;
+    z-index: 1000;
+}
+
+.bottom{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+}
+
+#foto{
+    border-radius: 130px;
+    /* height: 300px; */
+    margin-top: 21px;
+    /* margin-left: 100px; */
+}
+
+#logo{
+    width: 200px;
+    height: 90px;
+}
+
+#imagen{
+    float: left;
+}
+
+.card{
+    margin-top: 50px;
+    border: none;
+}
+
+#breadcrumb{
+    position: absolute;
+    /* top: 35px; */
+}
+
+#breadcrumb img{
+    display: block;
+}
+
+#breadcrumb .separador{
+    margin-left: 59px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#breadcrumb .centrar{
+    margin-left: 34px;;
+}
+
+
+.fixed-column {
+    position: sticky;
+    top: 0;
+}
+
+#mvv .card h1, #mvv .card h2, #mvv .card p, #mvv #rrss, #skills h1, #projects h1, #contact h1,#contact p{
+    text-align: left;
+}
+
+#projects h1{
+    margin-bottom: 35px;
+}
+
+.figura{
+    opacity: 0.2;
+    width: 45px;
+}
+
+.mvv.figura{
+    opacity: 0.2;
+    width: 75px;
+    margin-left: 22px !important;
+}
+
+/* SKILLS */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.button-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.content-container{
+    width: 100%;
+}
+
+#content1,#content2,#content3{
+    margin: auto;
+}
+
+.content-container > div {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+.content-container > div.active {
+    display: block;
+}
+
+.skills{
+    width: 117px;
+}
+
+.botones{
+    margin-bottom: 40px;
+    font-weight: 700;
+    border: 1px solid #334D68;
+}
+
+.botones:hover{
+    background-color: #334D68;
+    margin-bottom: 40px;
+    color: white;
+    font-weight: 700;
+    border: 1px solid #334D68;
+}
+
+.botones.selected{
+    background-color: #334D68;
+    color: white;
+}
+
+.skilltype{
+    width: 110px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+#skills #content1,#skills #content2,#skills #content3{
+    max-width: 669px;
+    border: none;
+}
+
+#dispositivo{
+    position: relative;
+}
+
+#contact .card-body{
+    text-align: left;
+    background-color: #334D68;
+    color: white;
+    border-radius: 10px;
+    max-width: 520px;
+    margin-left: 55px;
+}
+
+#contact form #textarea{
+    resize: none;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #334D68;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#contactbtn{
+    background-color: #FFFF78;
+    color: black;
+    font-weight: 700;
+}
+
+#contenido{
+    margin-bottom: 145px;
+}
+
+.seleccionado{
+    opacity: 1 !important;
+}
+
+#carousel h5, #carousel p{
+    background-color: black;
+    margin-bottom: 0;
+    color: white;
+}
+
+#carousel h5{
+    border-top: 5px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#carousel p{
+    border-bottom: 5px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#carousel .carousel-caption{
+    top: 70%;
+}
+
+#carousel .carousel-control-prev-icon{
+    background-color: black;
+    padding: 21px;
+    margin-right: 40px;
+}
+
+#carousel .carousel-control-next-icon{
+    background-color: black;
+    padding: 21px;
+    margin-left: 38px;
+}
+
+#projects{
+    margin-bottom: 90px;
+}
+
+@media (max-width: 641px) {
+
+    #skills h1, #projects h1, #contact h1{
+        margin-top: 35px;
+    }
+    
+    .figura{
+        opacity: 0.2;
+        width: 26px;
+    }
+
+    .mvv.figura{
+        opacity: 0.2;
+        width: 60px;
+        margin-left: -9px !important;
+    }
+
+    #breadcrumb .centrar{
+        margin-left: 8px;;
+    }
+
+    #breadcrumb .separador {
+        margin-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #contact .card-body{
+        text-align: left;
+        background-color: #334D68;
+        color: white;
+        border-radius: 10px;
+        max-width: 520px;
+        margin-left: 0px;
+        margin-top: 55px;
+    }
+}
