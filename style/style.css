@@ -131,6 +131,7 @@ nav{
     margin-bottom: 40px;
     font-weight: 700;
     border: 1px solid #334D68;
+    width: 95px;
 }
 
 .botones:hover{
