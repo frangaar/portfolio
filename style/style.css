@@ -223,13 +223,13 @@ footer {
 #carousel .carousel-control-prev-icon{
     background-color: black;
     padding: 19px;
-    margin-right: 32px;
+    margin-right: 10px;
 }
 
 #carousel .carousel-control-next-icon{
     background-color: black;
     padding: 19px;
-    margin-left: 31px;
+    margin-left: 10px;
 }
 
 #projects{
