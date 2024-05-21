@@ -141,8 +141,8 @@ function handleScroll() {
 // Agregar un event listener para el evento de desplazamiento
 window.addEventListener('scroll', handleScroll);
 
-
-document.querySelector('carousel-control-prev').addEventListener('click', function() {
+let prev = document.querySelector('.carousel-control-prev');
+prev.addEventListener('click', function() {
     // Verificar si la API de Vibración está disponible
     if (navigator.vibrate) {
       // Hacer vibrar el dispositivo durante 200 milisegundos
@@ -152,7 +152,8 @@ document.querySelector('carousel-control-prev').addEventListener('click', functi
     }
 });
 
-document.querySelector('carousel-control-next').addEventListener('click', function() {
+let next = document.querySelector('.carousel-control-next');
+next.addEventListener('click', function() {
     // Verificar si la API de Vibración está disponible
     if (navigator.vibrate) {
       // Hacer vibrar el dispositivo durante 200 milisegundos
