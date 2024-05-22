@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#daltonismButton {
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    width: 76px;
+    position: fixed;
+    left: -23px;
+    top: 81px;
+    z-index: 500000;
+}
+
+.daltonism-protanopia {
+    filter: url(#protanopia);
+}
+
+.daltonism-deuteranopia {
+    filter: url(#deuteranopia);
+}
+
+.daltonism-tritanopia {
+    filter: url(#tritanopia);
+}
+
+svg{
+    display: none;
+}
+
+.alert{
+    width: 75%;
+    position: fixed;
+    left: 75px;
+    top: 113px;
+    z-index: 5000;
+}

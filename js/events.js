@@ -55,12 +55,18 @@ function resize(){
     let contact = document.getElementById('contact');
     let alturaPantalla = window.innerHeight;
 
-    if(window.innerWidth >= 770){
+    if(window.innerWidth >= 750 && window.innerWidth <= 1038){
         mvv.style.height = alturaPantalla + 'px';
         skills.style.height = alturaPantalla + 'px';
         projects.style.height = alturaPantalla + 'px';
         contact.style.height = alturaPantalla + 'px';
-    }else{
+    }else if(window.innerWidth >= 1038){
+        mvv.style.height = alturaPantalla/1.2 + 'px';
+        skills.style.height = alturaPantalla/1.3 + 'px';
+        projects.style.height = alturaPantalla + 'px';
+        contact.style.height = alturaPantalla/1.4 + 'px';
+    }
+    else{
         mvv.style.height = 'inherit';
         skills.style.height = 'inherit';
         projects.style.height = 'inherit';
@@ -144,19 +150,21 @@ window.addEventListener('scroll', handleScroll);
 let prev = document.querySelector('.carousel-control-prev');
 prev.addEventListener('click', function() {
     // Verificar si la API de Vibración está disponible
-    if ('vibrate' in navigator) {
-        navigator.vibrate(200); // Vibrate for 200 milliseconds
+    if (navigator.vibrate) {
+      // Hacer vibrar el dispositivo durante 200 milisegundos
+      navigator.vibrate(1000);
     } else {
-        alert('Vibration API is not supported on this device.');
+      console.log("La API de Vibración no está disponible en este dispositivo.");
     }
 });
 
 let next = document.querySelector('.carousel-control-next');
 next.addEventListener('click', function() {
     // Verificar si la API de Vibración está disponible
-    if ('vibrate' in navigator) {
-        navigator.vibrate(200); // Vibrate for 200 milliseconds
+    if (navigator.vibrate) {
+      // Hacer vibrar el dispositivo durante 200 milisegundos
+      navigator.vibrate(1000);
     } else {
-        alert('Vibration API is not supported on this device.');
+      console.log("La API de Vibración no está disponible en este dispositivo.");
     }
 });
