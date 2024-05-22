@@ -144,21 +144,19 @@ window.addEventListener('scroll', handleScroll);
 let prev = document.querySelector('.carousel-control-prev');
 prev.addEventListener('click', function() {
     // Verificar si la API de Vibración está disponible
-    if (navigator.vibrate) {
-      // Hacer vibrar el dispositivo durante 200 milisegundos
-      navigator.vibrate(1000);
+    if ('vibrate' in navigator) {
+        navigator.vibrate(200); // Vibrate for 200 milliseconds
     } else {
-      console.log("La API de Vibración no está disponible en este dispositivo.");
+        alert('Vibration API is not supported on this device.');
     }
 });
 
 let next = document.querySelector('.carousel-control-next');
 next.addEventListener('click', function() {
     // Verificar si la API de Vibración está disponible
-    if (navigator.vibrate) {
-      // Hacer vibrar el dispositivo durante 200 milisegundos
-      navigator.vibrate(1000);
+    if ('vibrate' in navigator) {
+        navigator.vibrate(200); // Vibrate for 200 milliseconds
     } else {
-      console.log("La API de Vibración no está disponible en este dispositivo.");
+        alert('Vibration API is not supported on this device.');
     }
 });
