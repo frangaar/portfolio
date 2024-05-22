@@ -146,8 +146,7 @@ prev.addEventListener('click', function() {
     // Verificar si la API de Vibración está disponible
     if (navigator.vibrate) {
       // Hacer vibrar el dispositivo durante 200 milisegundos
-      alert('hola')
-      navigator.vibrate(200);
+      navigator.vibrate(1000);
     } else {
       console.log("La API de Vibración no está disponible en este dispositivo.");
     }
@@ -157,9 +156,8 @@ let next = document.querySelector('.carousel-control-next');
 next.addEventListener('click', function() {
     // Verificar si la API de Vibración está disponible
     if (navigator.vibrate) {
-        alert('hola')
       // Hacer vibrar el dispositivo durante 200 milisegundos
-      navigator.vibrate(200);
+      navigator.vibrate(1000);
     } else {
       console.log("La API de Vibración no está disponible en este dispositivo.");
     }
