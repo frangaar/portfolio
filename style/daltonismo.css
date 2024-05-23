@@ -33,7 +33,7 @@ svg{
 .alert{
     width: 50%;
     position: fixed;
-    left: 75px;
+    left: 95px;
     top: 113px;
     z-index: 5000;
 }
@@ -84,5 +84,9 @@ svg{
 
     #dropdownMenu {
         left: 65px;
+    }
+
+    .alert{
+        left: 75px;
     }
 }
