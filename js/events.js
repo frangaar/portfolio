@@ -55,23 +55,23 @@ function resize(){
     let contact = document.getElementById('contact');
     let alturaPantalla = window.innerHeight;
 
-    if(window.innerWidth >= 750 && window.innerWidth <= 1038){
-        mvv.style.height = alturaPantalla + 'px';
-        skills.style.height = alturaPantalla + 'px';
-        projects.style.height = alturaPantalla + 'px';
-        contact.style.height = alturaPantalla + 'px';
-    }else if(window.innerWidth >= 1038){
-        mvv.style.height = alturaPantalla/1.2 + 'px';
-        skills.style.height = alturaPantalla/1.3 + 'px';
-        projects.style.height = alturaPantalla + 'px';
-        contact.style.height = alturaPantalla/1.4 + 'px';
-    }
-    else{
-        mvv.style.height = 'inherit';
-        skills.style.height = 'inherit';
-        projects.style.height = 'inherit';
-        contact.style.height = 'inherit';
-    }
+    // if(window.innerWidth >= 750 && window.innerWidth <= 1038){
+    //     mvv.style.height = alturaPantalla + 'px';
+    //     skills.style.height = alturaPantalla + 'px';
+    //     projects.style.height = alturaPantalla + 'px';
+    //     contact.style.height = alturaPantalla + 'px';
+    // }else if(window.innerWidth >= 1038){
+    //     mvv.style.height = alturaPantalla/1.1 + 'px';
+    //     skills.style.height = alturaPantalla/1.1 + 'px';
+    //     projects.style.height = alturaPantalla + 'px';
+    //     contact.style.height = alturaPantalla/1.4 + 'px';
+    // }
+    // else{
+    //     mvv.style.height = 'inherit';
+    //     skills.style.height = 'inherit';
+    //     projects.style.height = 'inherit';
+    //     contact.style.height = 'inherit';
+    // }
     
 }
 

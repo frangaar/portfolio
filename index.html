@@ -34,7 +34,13 @@
       </defs>
   </svg>
     <div class="container-fluid text-center">
-        <img src="img/accesibilidad.svg" id="daltonismButton">
+        <img src="img/accesibilidad.svg" id="daltonismButton" class="toggleButton">
+        <div id="dropdownMenu" class="dropdown-menu">
+          <button onclick="activarModo('protanopia')">Protanopia</button>
+          <button onclick="activarModo('deuteranopia')">Deuteranopia</button>
+          <button onclick="activarModo('tritanopia')">Tritanopia</button>
+          <button onclick="activarModo('normal')">Normal</button>
+      </div>
         <div class="alert alert-warning" role="alert" style="display: none;">
           
         </div>

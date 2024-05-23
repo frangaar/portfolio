@@ -74,6 +74,11 @@ nav{
     top: 0;
 }
 
+#mvv,#skills,#projects,#contact{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 #mvv .card h1, #mvv .card h2, #mvv .card p, #mvv #rrss, #skills h1, #projects h1, #contact h1,#contact p{
     text-align: left;
 }
@@ -131,7 +136,7 @@ nav{
     margin-bottom: 40px;
     font-weight: 700;
     border: 1px solid #334D68;
-    width: 95px;
+    width: 100px;
 }
 
 .botones:hover{

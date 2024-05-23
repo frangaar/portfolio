@@ -9,7 +9,7 @@ body {
     cursor: pointer;
     width: 76px;
     position: fixed;
-    left: -23px;
+    left: 14px;
     top: 81px;
     z-index: 500000;
 }
@@ -31,9 +31,54 @@ svg{
 }
 
 .alert{
-    width: 75%;
+    width: 50%;
     position: fixed;
     left: 75px;
     top: 113px;
     z-index: 5000;
+}
+
+#dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 113px;
+    left: 65px;
+    width: 200px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#dropdownMenu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+
+#dropdownMenu button:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block !important;
+}
+
+
+@media (max-width: 641px) {
+
+    #daltonismButton {
+        padding: 10px 20px;
+        margin: 20px;
+        cursor: pointer;
+        width: 76px;
+        position: fixed;
+        left: -23px;
+        top: 81px;
+        z-index: 500000;
+    }
 }
