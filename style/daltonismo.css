@@ -40,9 +40,9 @@ svg{
 
 #dropdownMenu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 113px;
-    left: 65px;
+    left: 95px;
     width: 200px;
     border: 1px solid #ccc;
     background-color: #fff;
@@ -80,5 +80,9 @@ svg{
         left: -23px;
         top: 81px;
         z-index: 500000;
+    }
+
+    #dropdownMenu {
+        left: 65px;
     }
 }
