@@ -1,7 +1,15 @@
-h1{
+#cabecera{
+    font-size: 56px;
+    padding-top: 75px;
+    padding-left: 85px;
+}
+
+#cabecera h1, #cabecera h2{
     font-family: 'Salsa', cursive;
     font-weight: 400;
     font-style: normal;
+    font-size: 126px;
+
 }
 
 p{
@@ -19,7 +27,7 @@ span{
 nav{
     background-color: #334D68;
     height: 100px;
-    z-index: 1000;
+    z-index: 500001;
 }
 
 .bottom{
@@ -255,12 +263,6 @@ footer {
     border-radius: 18px;
 }
 
-.scroll-indicator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .arrows {
     display: flex;
     flex-direction: column;
@@ -270,10 +272,14 @@ footer {
 .arrow {
     width: 24px;
     height: 24px;
-    border-bottom: 4px solid #000;
-    border-right: 4px solid #000;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
     transform: rotate(45deg);
     animation: bounce 2s infinite;
+}
+
+.rotar{
+    transform: rotate(180deg);
 }
 
 .scroll-text {
@@ -334,4 +340,37 @@ footer {
     .botones{
         font-size: 11px;
     }
+
+    #cabecera{
+        padding-top: 165px;
+    }
+
+    #cabecera h1, #cabecera h2{
+        font-family: 'Salsa', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 75px;
+    }
+}
+
+
+#portada{
+    background-color:  #334D68;
+    z-index: 999999;
+    color: white;
+    position: relative;
+    height: 100vh;
+}
+
+.scroll-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    /* Puedes ajustar el padding y otros estilos según sea necesario */
+    padding-bottom: 30px;
 }

@@ -49,31 +49,30 @@ window.addEventListener('resize',resize)
 
 function resize(){
 
-    let mvv = document.getElementById('mvv');
-    let skills = document.getElementById('skills');
-    let projects = document.getElementById('projects');
-    let contact = document.getElementById('contact');
+    let portada = document.getElementById('portada');
     let alturaPantalla = window.innerHeight;
 
-    // if(window.innerWidth >= 750 && window.innerWidth <= 1038){
-    //     mvv.style.height = alturaPantalla + 'px';
-    //     skills.style.height = alturaPantalla + 'px';
-    //     projects.style.height = alturaPantalla + 'px';
-    //     contact.style.height = alturaPantalla + 'px';
-    // }else if(window.innerWidth >= 1038){
-    //     mvv.style.height = alturaPantalla/1.1 + 'px';
-    //     skills.style.height = alturaPantalla/1.1 + 'px';
-    //     projects.style.height = alturaPantalla + 'px';
-    //     contact.style.height = alturaPantalla/1.4 + 'px';
-    // }
-    // else{
-    //     mvv.style.height = 'inherit';
-    //     skills.style.height = 'inherit';
-    //     projects.style.height = 'inherit';
-    //     contact.style.height = 'inherit';
-    // }
+    portada.style.height = alturaPantalla + 'px';
     
 }
+
+// Variables para detectar el desplazamiento
+let lastScrollY = 0;
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    // Detecta si la dirección del scroll es hacia abajo y si el scroll está en la parte superior
+    if (currentScrollY > lastScrollY && lastScrollY === 0) {
+        window.scrollTo({
+            top: document.getElementById('navbar').offsetTop,
+            behavior: 'smooth'
+        });
+    }
+
+    // Actualiza la posición del último scroll
+    lastScrollY = currentScrollY;
+});
 
 function scroll(){
     const breadcrumb = document.getElementById('breadcrumb');
@@ -87,7 +86,16 @@ function scroll(){
     }
 }
 
-
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+    let flechas = document.querySelector('.scroll-indicator')
+    let texto = document.querySelector('.scroll-indicator .scroll-text')
+    texto.innerHTML = 'Deslice hacia arriba';
+    flechas.classList.add('rotar');
+}else{
+    texto.innerHTML = 'Deslice hacia abajo';
+    flechas.classList.remove('rotar');
+}
 
 // Función para manejar el evento de desplazamiento
 function handleScroll() {
@@ -168,22 +176,3 @@ next.addEventListener('click', function() {
       console.log("La API de Vibración no está disponible en este dispositivo.");
     }
 });
-
-
-let startY;
-
-    // Detecta cuando el usuario comienza a tocar la pantalla
-    window.addEventListener('touchstart', (event) => {
-        startY = event.touches[0].pageY;
-    });
-
-    // Detecta cuando el usuario desliza el dedo
-    window.addEventListener('touchmove', (event) => {
-        const currentY = event.touches[0].pageY;
-        const deltaY = startY - currentY;
-
-        // Si el deltaY es positivo, el usuario está deslizando hacia arriba
-        if (deltaY > 0) {
-            window.scrollBy(0, deltaY);
-        }
-    });
