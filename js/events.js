@@ -87,9 +87,9 @@ function scroll(){
 }
 
 let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-if (isMobile) {
-    let flechas = document.querySelector('.scroll-indicator')
-    let texto = document.querySelector('.scroll-indicator .scroll-text')
+let texto = document.querySelector('.scroll-indicator .scroll-text')
+let flechas = document.querySelector('.scroll-indicator')
+if (isMobile) {    
     texto.innerHTML = 'Deslice hacia arriba';
     flechas.classList.add('rotar');
 }else{
