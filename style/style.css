@@ -374,3 +374,7 @@ footer {
     /* Puedes ajustar el padding y otros estilos según sea necesario */
     padding-bottom: 30px;
 }
+
+hr{
+    width: 320px;
+}
