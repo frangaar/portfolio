@@ -16,7 +16,14 @@
   </head>
 
   <body> 
-    
+    <img src="img/accesibilidad.svg" id="daltonismButton" class="toggleButton">
+    <div id="dropdownMenu" class="dropdown-menu">
+      <button onclick="activarModo('protanopia')">Protanopia</button>
+      <button onclick="activarModo('deuteranopia')">Deuteranopia</button>
+      <button onclick="activarModo('tritanopia')">Tritanopia</button>
+      <button onclick="activarModo('normal')">Normal</button>
+    </div>
+    <div class="alert alert-warning" role="alert" style="display: none;"></div>
     <nav id="navbar" class="navbar navbar-expand-lg">
       <img id="logo" src="img/logo.svg" alt="Bootstrap">
     </nav>
@@ -33,17 +40,9 @@
           </filter>
       </defs>
   </svg>
-    <div class="container-fluid text-center">
-        <img src="img/accesibilidad.svg" id="daltonismButton" class="toggleButton">
-        <div id="dropdownMenu" class="dropdown-menu">
-          <button onclick="activarModo('protanopia')">Protanopia</button>
-          <button onclick="activarModo('deuteranopia')">Deuteranopia</button>
-          <button onclick="activarModo('tritanopia')">Tritanopia</button>
-          <button onclick="activarModo('normal')">Normal</button>
-      </div>
-        <div class="alert alert-warning" role="alert" style="display: none;">
-          
-        </div>
+    <div class="container-fluid text-center" id="contenido">
+        
+        
         <div class="row align-items-start">
             <div class="col-2 fixed-column">
             <div id="breadcrumb">
@@ -58,6 +57,7 @@
             </div>
             <div id="contenido" class="col-10">
                 <div id="portada">
+                  
                   <div class="scroll-indicator">
                     <div class="arrows">
                         <div class="arrow"></div>

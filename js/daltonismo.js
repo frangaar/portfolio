@@ -1,6 +1,7 @@
 const button = document.getElementById('daltonismButton');
 const body = document.body;
 const alert = document.querySelector('.alert');
+let dropdownMenu = document.getElementById('dropdownMenu');
 
 let modeIndex = 0;
 const modes = ['daltonism-protanopia', 'daltonism-deuteranopia', 'daltonism-tritanopia','daltonism-desactivado'];
@@ -10,26 +11,33 @@ function ocultarAlerta(){
 }
 
 document.querySelector('.toggleButton').addEventListener('click', function() {
-    let dropdownMenu = document.getElementById('dropdownMenu');
     dropdownMenu.classList.toggle('show');
+});
+
+document.querySelector('#contenido').addEventListener('click', function() {
+    if(dropdownMenu.classList.contains('show')){
+        dropdownMenu.classList.toggle('show');
+    }
+    
 });
 
 function activarModo(modo) {
 
-    body.classList.remove(...modes);
+    let contenido = document.getElementById('contenido');
+    contenido.classList.remove(...modes);
 
     switch(modo) {
         case 'protanopia':
-            body.classList.add('daltonism-protanopia');
+            contenido.classList.add('daltonism-protanopia');
             break;
         case 'deuteranopia':
-            body.classList.add('daltonism-deuteranopia');
+            contenido.classList.add('daltonism-deuteranopia');
             break;
         case 'tritanopia':
-            body.classList.add('daltonism-tritanopia');
+            contenido.classList.add('daltonism-tritanopia');
             break;
         case 'normal':
-            body.classList.add('daltonism-desactivado');
+            contenido.classList.add('daltonism-desactivado');
             break;
     }
 

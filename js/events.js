@@ -168,3 +168,22 @@ next.addEventListener('click', function() {
       console.log("La API de Vibración no está disponible en este dispositivo.");
     }
 });
+
+
+let startY;
+
+    // Detecta cuando el usuario comienza a tocar la pantalla
+    window.addEventListener('touchstart', (event) => {
+        startY = event.touches[0].pageY;
+    });
+
+    // Detecta cuando el usuario desliza el dedo
+    window.addEventListener('touchmove', (event) => {
+        const currentY = event.touches[0].pageY;
+        const deltaY = startY - currentY;
+
+        // Si el deltaY es positivo, el usuario está deslizando hacia arriba
+        if (deltaY > 0) {
+            window.scrollBy(0, deltaY);
+        }
+    });
